@@ -6,6 +6,11 @@
 
 }
 
+@font-face {
+    font-family: pixel;
+    src: url(Fonts/Pixellari.ttf);
+}
+
 html
 {
     scroll-behavior: smooth;
@@ -13,134 +18,166 @@ html
 
 body
 {
-    color: white;
-    font-size: 20px;
-    font-family:OCR A;
-    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: pixel;
+}
+
+header.subHeader
+{
+    background: #3b0172;
+    color:#000000;
+    font-family: pixel;
+    font-size: 25px;
+    height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 main
 {
+    image-rendering: pixelated;
     background-image: url(Img/NeonCitySunrise.png);
     height:100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-h1
-{
-    text-decoration: underline;
-    font-size: 250%;
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-h2
-{
-    padding:30px;
-}
-h3
-{
-    height:100vw;
-    font-size:100px;
+    padding-left: 350px;
+    padding-right: 350px;
 }
 
 section
 {
     text-align: center;
-    min-height: 62vh;
-    padding-top: 20%;
+    padding: 100px;
 }
 
-a
+section > img
 {
-    color:white;
-    text-decoration: underline;
-    font-size: 60px;
-}
-
-h2 > a
-{
-    font-size: 30px;
-}
-
-img
-{
-    margin-top: 40px;
-    border-radius: 30px;
-}
-
-a, img.icon
-{
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    padding:center;
-    border-radius: 5%;
-}
-
-a.SubTitle
-{
-    font-size:20px;
-}
-
-ul
-{
-    font-size: 35px;
+    max-width: 800px;
+    max-height: 800px;
 }
 
 header, footer
 {
-    background: #000000;
-    color:#00FFFF;
-    font-family: OCR A;
-    font-size: 50px;
+    background: #230044;
+    color:#FFFFFF;
+    font-family: pixel;
+    font-size: 60px;
     height: 140px;
-    padding:20px;
     display: flex;
     align-items: center;
+    padding-left: 25px;
+} 
 
+img.profile
+{
+    Width: 200px;
+    height: 200px;
 }
 
-button
+img.bigButton
 {
-    height:100%;
-    border:none;
-    color:#00FFFF;
+    width: 250px;
+    height: 250px;
+}
+
+a
+{  
+    margin-right: 25px;
+    margin-left: 25px;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+img.bigButton :hover
+{
+    rotate: 15;
+}
+
+footer > div.buttonBox > a :hover
+{
+    border-radius: 100px;
+    background-color: #6900CB;
+}
+
+a :hover
+{
+    text-decoration: underline;
+}
+
+a > h2
+{
+    color: #ffffff;
+    padding: 10px;
+    font-size: 50px;
+}
+
+a:link, a:visited 
+{
+    color: #FFFFFF;
     text-decoration: none;
-    background-color: #000000;
-    display: flex;
-    align-items: right;
-    margin-left: auto;
 }
 
-button:hover
+h1
 {
-    background: rgb(44, 44, 44);
-    border-radius: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+    text-decoration: underline;
 }
 
-button > a
+h2
 {
-    height:100%;
-    font-size: 30px;
-    padding: 8%;
+    padding-top: 30px;
+    font-size: 25px;
 }
 
-sup
+ul
 {
-    padding:20px;
-    font-size: 30px;
+    font-size: 100px;
+    text-decoration: underline;
 }
 
-article
+footer > ul
 {
+    font-size: 50px;
+    text-decoration: none;
+}
+
+div.buttonBox
+{
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; 
     display:flex;
     flex-direction: row;
-    width: 100%;
-    margin: 0 auto;
-    padding: 100px;
-}   
+}
+
+div.buttonBox > a
+{
+    justify-content: center;
+    align-items: center;
+}
+
+div.verticalBox
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin:120px;
+}
+
+a > img
+{
+    max-width: 400px;
+    max-height: 400px;
+    padding: 15px;
+    display: flex;
+    width:100px;
+    height:100px;
+}
 
 @media screen and (max-width: 1000px)
 {
