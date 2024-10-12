@@ -25,22 +25,36 @@
     <header class = "subHeader"></header>
     <main>
         <section>
-            <div class="verticalBox">
-                <a href="CurrentProject.html">
-                    <img src="Img/CureentProjectImg.png" alt="" class="largeProject">
-                    <h1>
-                        Current Project
-                    </h1>
-                </a>
-            </div>
+                <h3>
+                    Current Project
+                </h3>
+                <h2>
+                    This project is my most recent project and I am as of now still working on it to try and 
+                    improve it's movement and what not. It all statred with me wanting to be able to make a proper State Machine
+                    (which you can read more about below) to improve my capabilities of movement and animations. This game is supposed
+                    to become a precise platformer with many possibilities in temrs of momentum and speed.
+                </h2>
         </section>
         <section>
+            <img src="img/CurrentProjectStateMachine.png" alt="" class="largeProject">
             <h3>
                 State Machine
             </h3>
-            <img src="Img/States.GIF" alt="">
+            <h2>
+                This is where all the state machine magic happens! The Image you see above is the Start Function in the Player 
+                Class/Script. In this picture you can see that I've written down all the Transitions between states with a 
+                specific value. all these transitions will be put into a list by the PlayerStateMachine Class/Script. 
+                The PlayerStateMachine Class/Script will than check in which state the player is which at the start will be Idle
+                because that's what we Initialize in the Player Class/ Script. after this it will check with a for each loop if a transition
+                that starts from the Current State (in our case Idle) has all it's vallues set to true. If this is the case it will 
+                change the current state in the ChangeState function.
+            </h2>
+            <h2>
+                Reading this out loud makes it sound very complicated so if you want to see my Scripts you can find them at the bottom of this page
+            </h2>
         </section>
         <section>
+            <img src="img/States.gif">
             <h3>
                 Movement
             </h3>

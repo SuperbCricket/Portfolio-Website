@@ -49,12 +49,13 @@ main
 section
 {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 section > img
 {
+    margin: 10px;
     border-radius: 10px;
     max-width: 800px;
     max-height: 800px;
@@ -135,6 +136,11 @@ h2
     font-size: 25px;
 }
 
+h2 > a
+{
+    padding: 0px;
+}
+
 ul
 {
     font-size: 100px;
@@ -191,7 +197,7 @@ a > img.project
     height: 216px;
 }
 
-a > img.largeProject
+img.largeProject
 {
     border-radius: 25px;
     max-width: 1000px;
