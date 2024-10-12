@@ -42,14 +42,15 @@ main
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-left: 350px;
-    padding-right: 350px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 section
 {
     text-align: center;
-    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 section > img
@@ -167,7 +168,7 @@ div.verticalBox
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin:120px;
+    margin:40px;
 }
 
 a > img
@@ -180,7 +181,26 @@ a > img
     height:100px;
 }
 
+a > img.project
+{
+    border-radius: 35px;
+    max-width: 1000px;
+    max-height: 1000px;
+    display: flex;
+    width: 386px;
+    height: 216px;
+}
+
+a > img.largeProject
+{
+    border-radius: 25px;
+    max-width: 1000px;
+    max-height: 1000px;
+    width: 772px;
+    height: 432px;
+}
+
 @media screen and (max-width: 1000px)
 {
-
+    
 }

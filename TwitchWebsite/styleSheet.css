@@ -42,8 +42,8 @@ main
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-left: 350px;
-    padding-right: 350px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 section
@@ -132,6 +132,10 @@ h2
     padding-top: 30px;
     font-size: 25px;
 }
+h3
+{
+    font-size: 20px;
+}
 
 ul
 {
@@ -149,7 +153,6 @@ div.buttonBox
 {
     justify-content: center;
     align-items: center;
-    margin-left: auto; 
     display:flex;
     flex-direction: row;
 }
@@ -160,13 +163,60 @@ div.buttonBox > a
     align-items: center;
 }
 
+header > div.buttonBox, footer > div.buttonBox
+{
+    margin-left: auto; 
+}
+
 div.verticalBox
 {
-    justify-content: center;
+    margin:70px;
     align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    margin:120px;
+}
+
+div.contentBar1 > div.verticalBox, div.mainBar > div.verticalBox, div.contentBar2 > div.verticalBox
+{
+    margin:0px;
+    width:500px;
+    height:70px;
+}
+
+div.mainBar
+{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: #848383;
+}
+
+div.contentBar1
+{
+    color: #000000;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: #b9b9b9;
+}
+
+div.contentBar2
+{
+    color: #000000;
+    display: flex;;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: #dedede;
+}
+
+div.contentBar1 > a, div.contentBar2 > a
+{
+    margin-left: 0;
+    margin-right: 0;
 }
 
 a > img
