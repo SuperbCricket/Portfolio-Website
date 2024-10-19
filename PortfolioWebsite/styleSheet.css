@@ -50,7 +50,7 @@ section
 {
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 30  px;
 }
 
 section > img
@@ -174,7 +174,7 @@ div.verticalBox
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin:40px;
+    padding:40px;
 }
 
 a > img
