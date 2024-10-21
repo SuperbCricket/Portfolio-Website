@@ -42,15 +42,15 @@ main
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 section
 {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30  px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 section > img
@@ -174,7 +174,7 @@ div.verticalBox
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding:40px;
+    padding:20px;
 }
 
 a > img

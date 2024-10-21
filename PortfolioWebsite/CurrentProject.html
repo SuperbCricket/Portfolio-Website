@@ -29,10 +29,10 @@
                     Current Project
                 </h3>
                 <h2>
-                    This project is my most recent project and I am as of now still working on it to try and 
-                    improve it's movement and what not. It all statred with me wanting to be able to make a proper State Machine
-                    (which you can read more about below) to improve my capabilities of movement and animations. This game is supposed
-                    to become a precise platformer with many possibilities in temrs of momentum and speed.
+                    This project is my most recent project and I am as of now still working on it to try and improve its movement and what not. 
+                    It all started with me wanting to be able to make a proper State Machine (which you can read more about below) to improve 
+                    my capabilities of movement and animations. This game is supposed to become a precise platformer with many possibilities 
+                    in terms of momentum and speed. 
                 </h2>
         </section>
         <section>
@@ -41,16 +41,9 @@
                 State Machine
             </h3>
             <h2>
-                This is where all the state machine magic happens! The Image you see above is the Start Function in the Player 
-                Class/Script. In this picture you can see that I've written down all the Transitions between states with a 
-                specific value. all these transitions will be put into a list by the PlayerStateMachine Class/Script. 
-                The PlayerStateMachine Class/Script will than check in which state the player is which at the start will be Idle
-                because that's what we Initialize in the Player Class/ Script. after this it will check with a for each loop if a transition
-                that starts from the Current State (in our case Idle) has all it's vallues set to true. If this is the case it will 
-                change the current state in the ChangeState function.
-            </h2>
-            <h2>
-                Reading this out loud makes it sound very complicated so if you want to see my Scripts you can find them at the bottom of this page.
+                This is where all the state machine magic happens! The image you see above is a visual sheet of all the states and their transitions. 
+                The icons on the left showcase the conditions for a state to switch to another. The player will start in the Idle state which gets 
+                called from the Player class/script “scripts can be found below”.  
             </h2>
         </section>
         <section>
@@ -59,12 +52,13 @@
                 Movement
             </h3>
             <h2>
-                People always seem to underestimate making movement for platformer games and always say that it's simple but a lot of people 
-                don't realize that making a proper platformer doesn't only require making a simple jump and walking script. To accomplish 
-                smooth gameplay a lot more moves need to be added. One extra move I added is a Coyote Jump making it so the player can jump for a 
-                short amount of time after walking of a platform. This makes the game feel more forgivable. Another Move I added is the Jump buffer 
-                which creates a short window to press the jump button before the player lands causing the player to jump right when he lands. this 
-                makes the game also more forgivable.
+                Most people seem to underestimate making movement for platformer games thinking it's simple, but they don't realize that making 
+                a proper platformer doesn't only require making a simple jump and walking script. To accomplish smooth gameplay a lot more 
+                moves need to be added. One of these moves is called a Coyote Jump which makes it possible for the player to jump for a short 
+                amount of time after walking of a platform. This is very important if you want your game to feel more forgivable. Another Move 
+                that can improve your platformer a lot is the Jump buffer which creates a short window to press the jump button before the 
+                player lands causing the player to jump right when he lands. this makes it so you can jump slightly early without being 
+                punished by mis-inputting too often.
 
             </h2>
         </section>
@@ -74,13 +68,10 @@
                 Pixel Snapping
             </h3>
             <h2>
-                because my game is made in pixel art I wanted to make the pixels from the player line up with the pixels from the tiles. This was
-                a little challanging because it was hard to set the resolution right without being able to set the ortho size easily in the standerd
-                unity camera. Luckily Cinemachine has an ortho size setting so my problem was solved pretty quickly after installing it.
-            </h2>
-            <h2>
-                In the Gif above you can see that the player in the engine (on the left) doesn't snap to the right pixel but the player in the game 
-                window does.
+                My game is made in pixel art and one thing I wanted to avoid from the start is that the player would be able to stand “between 
+                pixels” when moving. I fixed this problem by changing the resolution of the game to the set amount of pixels per unit (which 
+                is 48). Now the player will snap on the pixels (shown on the right) even though the player is technically not exactly in that 
+                spot in the editor (shown on the left).
             </h2>
         </section>
         <section>
@@ -90,17 +81,17 @@
             </h3>
             <h2>
                 I decided to make a tile rule system in my game because I think I'm going to have to place a lot of tiles to make a proper platformer.
-                making this sytem took a pretty long time but I feel like it will be worth it when I start doing level design and hope to save 
-                some time with it.
+                making this system took a long time but I feel like it will be worth it when I start doing level design. I hope to eventually save
+                time with this but we'll see.
             </h2>
         </section>
         <section>
             <img src="Img/animation.gif" class="largeProject">
             <h3>
-                Animations
+                Animations!
             </h3>
             <h2>
-                I created some animations to make the movement feel more fluid.
+                I created some animations for the main character to make the movement feel more fluid!
             </h2>
         </section>
     </main>
@@ -110,10 +101,10 @@
             Made By Gerben Prins
         </ul>
         <div class = "buttonBox">
-            <a href="" target = new>
+            <a href="" target="new">
                 <img src="Img/githuvLogo.png" alt="github">
             </a>
-            <a href="" target = new>
+            <a href="mailto:gerben.prins@outlook.com">
                 <img src="Img/EmailLogo.png" alt="Email">
             </a>
             <a href="" target="new">
