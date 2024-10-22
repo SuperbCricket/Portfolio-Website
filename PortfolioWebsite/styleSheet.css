@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: pixel;
-    src: url(Fonts/Pixellari.ttf);
+    src: url(fonts/pixellari.ttf);
 }
 
 html
@@ -37,7 +37,7 @@ header.subHeader
 main
 {
     image-rendering: pixelated;
-    background-image: url(Img/NeonCitySunrise.png);
+    background-image: url(img/neonCitySunrise.png);
     height:100%;
     background-repeat: no-repeat;
     background-position: center;
