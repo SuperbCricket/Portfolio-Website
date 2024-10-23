@@ -26,10 +26,12 @@
     <main>
         <section>
             <div class="verticalBox">
-                <img src="img/monocrowLarge.png" alt="" class="largeProject">
                 <h1>
                     Mono Crow
                 </h1>
+                <h2>
+                    Mono Crow is a first-person horror game where you have to avoid a big crow while trying to collect coins.
+                </h2>
             </div>
         </section>
         <section>
@@ -37,12 +39,23 @@
             <h3>
                 Waypoint System
             </h3>
+            <h2>
+                The waypoint system of the crow is decided by random coordinates at the side of the map that will be called in the bird 
+                class/ script. When it has chosen its coordinates it flies towards it by calculating the distance with the formula Distance 
+                = Destination - Position. Once it knows the distance, it flies towards the waypoint with its flightSpeed and chooses a new waypoint on 
+                arrival.
+
+            </h2>
         </section>
         <section>
             <img src="img/birdDodge.gif" alt="" class="largeProject">
             <h3>
                 Dodge System
             </h3>
+            <h2>
+                Another feature in the game is dodging the crow. This can be done when standing in one of the little shelter objects. 
+                The bird will hit a trigger telling it to retreat and follow its normal waypoints.
+            </h2>
         </section>
     </main>
     <header class = "subHeader"></header>  

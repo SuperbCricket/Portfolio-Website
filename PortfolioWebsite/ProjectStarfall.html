@@ -26,10 +26,13 @@
     <main>
         <section>
             <div class="verticalBox">
-                <img src="img/starfallLarge.png" alt="" class="largeProject">
                 <h1>
                     Project Starfall
                 </h1>
+                <h2>
+                    This is a 2D Metroidvenia project I worked on in college for about a year which has been in development by Neon Origins. This 
+                    is an Indy company which specializes in teaching new game developers how to work on big projects in large teams. 
+                </h2>
             </div>
         </section>
         <section>
@@ -37,18 +40,54 @@
             <h3>
                 Moving Platform Momentum
             </h3>
+            <h2>
+                The first user story I worked on was about applying moving platform momentum to the player momentum. This makes it possible for the 
+                player to stand still on the platform when it is moving. Its momentum is used to jump further or higher depending on the 
+                speed.
+            </h2>
+            <h2>
+                In the picture above you can see a drawn visual sheet which showcases how the player reacts/ can react to the moving platform
+                momentum. The red arrows show the momentum the player gets when they got on top of a moving platform. The green arrow shows 
+                the player momentum (think of walking or jumping).
+            </h2>
         </section>
         <section>
             <img src="img/checkpointStates.png" alt="" class="largeProject">
             <h3>
                 Checkpoint System
             </h3>
+            <h2>
+                Creating the checkpoint system was a lot more complicated than expected. Coding a checkpoint doesn't sound super complicated but
+                I couldn't just start coding like usual because me and the team weren't sure how the it was going to be made.
+                We decided to create a small group to discuss about what the best options would be for our checkpoint system. Eventually we all
+                agreed to a system that would work for the game making it possible for me to start coding it.
+            </h2>
+            <h2>
+                The checkpoints have three states. The first state is called "Deactive" which means the player hasn't reached the checkpoint yet.
+                The second state is the "Active State" which means the checkpoint is the last checkpoint the player activated. The last state is 
+                called the "Idle State" which means the checkpoint was activated by the player but isn't the last checkpoint the player activated.
+            </h2>
+            <h2>
+                This was useful because we wanted to make a system in the future that warps players to previously activated checkpoints. This makes it
+                possible for the player to traverse through the game more quickly and find new areas without getting bored of backtracking.
+            </h2>
         </section>
         <section>
             <img src="img/residualJumpForceCodeSnipit.png" alt="" class="largeProject">
             <h3>
                 Residual Jump Force
             </h3>
+            <h2>
+                Our team eventually decided to do a user test to figure out how players would experience our game and all its mechanics/ features. A
+                complaint we heard a lot is "The jump doesn't feel very responsive" which was probably true, but the game already had a jump buffer and 
+                coyote jump. When looking at our users' gameplay we realized that players would usually jump too high because our game didn't have 
+                any controlled jump height. This is why I decided to work on a residual jump force system which makes it possible for the player to jump 
+                less high when the player presses the jump button for a short amount of time.
+            </h2>
+            <h2>
+                I created the residual jump force system by checking if the player stopped pressing the jump button while the player was still jumping. I added
+                a force downwards in this situation to cancel the jump without the player losing all their momentum out of nowhere.
+            </h2>
         </section>
     </main>
     <header class = "subHeader"></header>  
